@@ -4,8 +4,22 @@
     <meta charset="utf-8">
     <meta name="vieport" content="width=device-width">
     <title>MySite</title>
+    <link rel="stylesheet" href="style.css">
+
+<style media="screen">
+  h3 {
+    background-color: blue;
+  }
+</style>
+
   </head>
   <body>
+
+<h3>head 1</h3>
+<h3 style="background-color: red">head 2</h3>
+<h3>head 3</h3>
+
+<p id="f">Hello</p>
 
       <h1>&lt;Hello&gt;</h1>
 
@@ -60,11 +74,65 @@ H<sub>2</sub>SO<sub>4</sub>
 <select class="BOB" name="SEL">
   <option value="1">Иванов</option>
   <option value="2">Шмыглин</option>
-  
+
 </select>
 
     <a href="trem.html" target="_self">l_1</a>
     <a href="https://knureigs.github.io/itech/" target="_blank">l_2</a>
+
+<br>
+
+<a href="trem.html"><img src="image.png" alt="банер" width="150" height="150" ></a>
+
+<br>
+
+<img src="image.png" alt="банер" usemap="#mapid">
+<map name="#mapid">
+  <area shape="rect" coords="12,45,73,101" href="trem.html" alt="прикол">
+  <area shape="circle" coords="34,45,10" href="trem.html" alt="tot">
+</map>
+
+
+
+<form class="myform" action="index.html" method="get">
+  <input type="radio" name="radbut" value="nice">
+  <input type="radio" name="radbut" value="dice">
+  <input type="text" name="text1" value="">
+  <input type="submit" name="sss" value="Send">
+  <button type="button" name="button">ssfs</button>
+</form>
+
+
+
+<div class="tabs">
+    <input type="radio" name="inset" value="" id="tab_1" checked>
+    <label for="tab_1">Вкладка №1</label>
+
+    <input type="radio" name="inset" value="" id="tab_2">
+    <label for="tab_2">Вкладка №2</label>
+
+    <input type="radio" name="inset" value="" id="tab_3">
+    <label for="tab_3">Вкладка №3</label>
+
+    <input type="radio" name="inset" value="" id="tab_4">
+    <label for="tab_4">Вкладка №4</label>
+
+    <div id="txt_1">
+        <p>Произвольное содержимое...</p>
+        <p>Произвольное содержимое...</p>
+        <p>Произвольное содержимое...</p>
+    </div>
+    <div id="txt_2">
+        <p>Вторая вкладка</p>
+    </div>
+    <div id="txt_3">
+        <p>Размеры содержимого вкладок</p>
+        <p>могут отличаться по высоте!</p>
+    </div>
+    <div id="txt_4">
+        <img src="image/logo.png" width="533" height="77" alt="Лого">
+    </div>
+</div>
 
   </body>
 </html>

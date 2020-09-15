@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+  <title>Images</title>
+</head>
+<body>
+  <div class="imgSelector">
+    <p>Выбор изображения: </p>
+    <select id="selector" name="imgsel" onchange="select()">
+      <option value="image1.png">1</option>
+      <option value="image2.jpg">2</option>
+      <option value="image3.gif">3</option>
+      <option value="image4.png">4</option>
+    </select>
+  </div>
+
+  <div class="imgHeightS">
+    <p id="imgW"></p>
+    <input type="range" min="1" max="1000" value="50" class="slider" id="myRange1">
+  </div>
+  <div class="imgWidthS">
+    <p id="imgH"></p>
+    <input type="range" min="1" max="1000" value="50" class="slider" id="myRange2" >
+  </div>
+  <br>
+
+
+  <img id='myImg' src="images/image1.png" alt="image1.png">
+
+
+  <script src="script.js"></script>
+</body>
+</html>

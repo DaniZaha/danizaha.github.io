@@ -1,0 +1,60 @@
+body  {
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  background-color: #f0f0f0;
+}
+
+h1  {
+  font-family: 'Times New Roman', serif;
+  font-size: 24pt;
+  background-color: #fff;
+}
+
+#f {
+
+  background-color: green;
+  color: white;
+  font-size: 24pt;
+  font-weight: 600;
+  background-image: url(image.png);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+
+}
+
+h3  {
+  background-color: green;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding-left: 20px;
+  text-align: center;
+ /*   font-variant: small-caps;  */
+  font-weight: 600;
+}
+
+.tabs>input { display: none; }
+.tabs>div {
+    display: none;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    background: #FFFFFF;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #C0C0C0;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+.tabs>input:checked + label {
+    color: #000000;
+    border: 1px solid #C0C0C0;
+    border-bottom: 1px solid #FFFFFF;
+    background: #FFFFFF;
+}
+#tab_1:checked ~ #txt_1, #tab_2:checked ~ #txt_2, #tab_3:checked ~ #txt_3, #tab_4:checked ~ #txt_4 {
+  display: block;
+}

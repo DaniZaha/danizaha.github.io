@@ -1,0 +1,39 @@
+p {
+  align: justify;
+}
+
+.selector {
+  display: inline-block;
+  width: 420px;
+  max-height: 420px;
+}
+
+.selector input {
+  display: none;
+}
+
+.selector div {
+  display: none;
+}
+
+.selector label {
+  margin-left: 30px;
+}
+
+.selector label {
+  margin-right: 10px;
+}
+
+.selector input:checked + label {
+  background: #000;
+  color: #FFF;
+}
+
+.selector label:hover {
+  background: #555;
+  color: #FFF;
+}
+
+#rad1:checked ~ #first, #rad2:checked~#second, #rad3:checked~#third {
+  display: block;
+}
