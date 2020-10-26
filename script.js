@@ -33,7 +33,15 @@
 function select() {
   var sel=document.getElementById('selector').selectedIndex;
   var options=document.getElementById('selector').options;
-  document.getElementById('myImg').src = 'images/'+options[sel].value;
-  document.getElementById('myImg').alt = 'images/'+options[sel].value;
+  var newimg = new Image();
+  newimg.src = 'images/'+options[sel].value;
+  
+  newimg.onload = function setter() {
+    img.src = 'images/'+options[sel].value;
+    img.alt = 'images/'+options[sel].value;
+    img.width = newimg.width;
+    img.height = newimg.height;
+  }
+
     load = false;
 }
