@@ -6,6 +6,7 @@ p {
   display: inline-block;
   width: 420px;
   max-height: 420px;
+  float: left;
 }
 
 .selector input {
