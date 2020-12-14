@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style media="screen">
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  #tabSpan{
+    float: left;
+    margin: 20px;
+
+  }
+
+  #winner{
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  input {
+    display: none;
+  }
+
+  canvas {
+    margin: 20px;
+    display: block;
+  }
+
+</style>
+
+</head>
+<body>
+
+  <canvas id="canvas" width="500" height="500" onclick="getPos()"></canvas>
+  <span id="tabSpan">
+    <table border="1px" id="tab">
+      <th>№</th>
+      <th>Result</th>
+    </table>
+  </span>
+  <span id="winner">X turn</span>
+  <input id="but" type="button" value="Reset" onclick="reset()">
+
+  <script src="ticktack.js"></script>
+</body>
+</html>

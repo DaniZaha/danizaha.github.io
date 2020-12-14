@@ -1,4 +1,4 @@
-
+﻿
   var widthSlide = document.getElementById('myRange1');
   var heightSlide = document.getElementById('myRange2');
   var outW = document.getElementById('imgW');
@@ -23,6 +23,8 @@
   }
 
   img.onload = function setOut() {
+
+
     load = true;
   widthSlide.value = img.width;
   outW.innerHTML = 'Ширина: '+img.width;
@@ -35,7 +37,7 @@ function select() {
   var options=document.getElementById('selector').options;
   var newimg = new Image();
   newimg.src = 'images/'+options[sel].value;
-  
+
   newimg.onload = function setter() {
     img.src = 'images/'+options[sel].value;
     img.alt = 'images/'+options[sel].value;

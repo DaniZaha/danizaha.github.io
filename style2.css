@@ -3,7 +3,7 @@ p {
 }
 
 .selector {
-  display: inline-block;
+  display: inline;
   width: 420px;
   max-height: 420px;
   float: left;
@@ -19,9 +19,6 @@ p {
 
 .selector label {
   margin-left: 30px;
-}
-
-.selector label {
   margin-right: 10px;
 }
 
